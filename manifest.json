@@ -1,0 +1,8 @@
+\{
+  "name": "iPhone Emulator",
+  "short_name": "iPhoneEmu",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#007aff",
+  "background_color": "#000000"
+}

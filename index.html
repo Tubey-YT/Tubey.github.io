@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iPhone Emulator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#007aff" />
+</head>
+<body>
+  <div class="iphone">
+    <div class="notch">
+      <div class="status-bar">
+        <span id="time">9:41</span>
+        <div class="status-icons">📶&nbsp;&nbsp;📡&nbsp;&nbsp;🔋</div>
+      </div>
+    </div>
+
+    <div class="screen" id="screen">
+      <div class="app-icon" onclick="openApp('phone')">📞</div>
+      <div class="app-icon" onclick="openApp('mail')">📧</div>
+      <div class="app-icon" onclick="openApp('music')">🎵</div>
+      <div class="app-icon" onclick="openApp('settings')">⚙️</div>
+      <div class="app-icon" onclick="openApp('photos')">📷</div>
+      <div class="app-icon" onclick="openApp('roblox')">🕹️</div>
+      <div class="app-icon" onclick="openApp('playstore')">🛍️</div>
+      <div class="app-icon" onclick="openApp('safari')">🌐</div>
+      <div class="app-icon" onclick="openApp('notes')">📝</div>
+      <div class="app-icon" onclick="openApp('messages')">💬</div>
+      <div class="app-icon" onclick="openApp('camera')">📸</div>
+    </div>
+
+    <div class="app-window" id="app-window">
+      <div class="app-header">
+        <span id="app-title">App</span>
+        <div class="app-controls">
+          <button id="fullscreen-btn" onclick="fullscreenApp()">⛶</button>
+          <button onclick="closeApp()">✖</button>
+        </div>
+      </div>
+      <div class="app-content" id="app-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
